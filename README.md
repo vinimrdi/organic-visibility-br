@@ -2,7 +2,7 @@
 
 Agent skill for **organic visibility in Brazil**: SEO (blue links), AEO (answer boxes / AI Overviews), and GEO (citations inside ChatGPT, Perplexity, Gemini, Copilot).
 
-Works for **any Brazilian entity** — local business, ecommerce, SaaS, professional, creator — with local trust surfaces (Google Business Profile, Reclame Aqui, CNPJ-consistent NAP), correct AI crawler separation (OAI-SearchBot vs GPTBot), IndexNow, Business Hub readiness, and 4-stage perception probes with hallucination detection.
+Works for **any Brazilian entity** — local business, ecommerce, SaaS, professional, creator — with local trust surfaces (Google Business Profile, Reclame Aqui, CNPJ-consistent NAP), correct AI crawler separation (OAI-SearchBot vs GPTBot), IndexNow, Business Hub readiness, 4-stage perception probes with hallucination detection + AI rank, and competitive reverse-engineering (page types → search patterns → moves to copy).
 
 **Primary deliverable:** a single actionable Markdown report in Brazilian Portuguese, structured so it can be pasted into an agent chat and executed.
 
@@ -27,7 +27,7 @@ Use organic-visibility-br. Audite a visibilidade orgânica de https://exemplo.co
 Relatório completo em pt-BR, pronto para execução.
 ```
 
-Optional: entity type or city if not discoverable from the URL.
+Optional: entity type, city, or competitor URLs if not discoverable.
 
 ## Layout
 
@@ -36,22 +36,22 @@ organic-visibility-br/
   SKILL.md
   README.md
   references/
-    platforms-brasil.md      # weighted matrix + BR oracles + niches
-    aeo-geo-schema.md        # bots, IndexNow, Business Hub, probes, citability evidence
-    scoring.md               # 4 pillars + backlog horizons
-    tactical-pages.md        # question landings, location pages, FAQ
-    competitor-local.md      # local competitor gap analysis
-    measurement.md           # GSC AI, GA4, probe cadence
-    author-eeat.md           # scored E-E-A-T checklist (0-2 per signal)
-    parasite-earned-mentions.md # off-site authority, review platforms, Reddit, G2
+    platforms-brasil.md                 # weighted matrix + BR oracles + niches
+    ai-visibility-probes.md             # 4-stage probes + AI rank + pages cited
+    competitive-reverse-engineering.md  # page types, search patterns, moves to copy
+    scoring.md                          # 4 pillars + backlog horizons
+    tactical-pages.md                   # question landings, location pages, FAQ
+    competitor-local.md                 # local competitor gap analysis
+    measurement.md                      # GSC AI, GA4, probe cadence
+    author-eeat.md                      # scored E-E-A-T checklist
+    parasite-earned-mentions.md         # off-site authority, review platforms, Reddit, G2
   assets/
     template-llms-txt.md
     template-robots-txt.md
     template-json-ld.md
-    template-probes.md       # 4-stage probes ready to run
+    template-probes.md
   examples/
-    sample-intake.md
-    sample-report-ptbr.md    # full sample output in pt-BR
+    sample-report-ptbr.md
 ```
 
 ## What this is not
@@ -61,6 +61,8 @@ organic-visibility-br/
 - Not legal, medical or financial advice
 
 ## Version
+
+**2.7.0** — Competitive reverse-engineering module (page types → search patterns → moves to copy) + upgraded AI visibility probes with rank-on-ai and pages-cited logic.
 
 **2.6.0** — Parasite SEO & Earned Mentions module (Reclame Aqui, G2/Capterra, Reddit, Product Hunt, Doctoralia) with safe execution rules.
 
@@ -72,9 +74,9 @@ organic-visibility-br/
 
 **2.2.0** — Tactical pages: question landings, safe location/service-area pages (anti-doorway), strategic FAQ — high-ROI easy execution patterns.
 
-**2.1.0** — Evidence refresh: Google official AI Overview rules, llms.txt demoted to hygiene (2026 studies), AI info/entity page alternative, nosnippet check, stronger earned-media emphasis, practitioner consensus (Bailyn/Indig/Solís/Ray).
+**2.1.0** — Evidence refresh: Google official AI Overview rules, llms.txt demoted to hygiene (2026 studies), AI info/entity page alternative, nosnippet check, stronger earned-media emphasis.
 
-**2.0.0** — Deep upgrade: autonomous Markdown report contract, universal entity support, research-backed citability rules, expanded platform detection (Apple Business Connect, Business Hub, Bing/IndexNow, etc.), critical-path backlog optimized for agent execution, evidence tags mandatory.
+**2.0.0** — Deep upgrade: autonomous Markdown report contract, universal entity support, research-backed citability rules, expanded platform detection, critical-path backlog optimized for agent execution.
 
 **1.1.1** — Probes template + sample report.  
 **1.1.0** — Weighted matrix, BR oracles, IndexNow, Business Hub, 4-stage probes.  
