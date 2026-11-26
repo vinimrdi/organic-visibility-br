@@ -6,20 +6,22 @@ description: >
   Markdown report from a URL: scorecard, critical findings, platform claim status
   (Google Business Profile, Apple Business Connect, OpenAI Business Hub, Bing,
   Reclame Aqui, etc.), technical access (robots, WAF, IndexNow, llms.txt, schema),
-  4-stage perception probes with hallucination flags, and a prioritized 48h/30d/90d
-  backlog ready to paste into an agent chat for execution. Triggers: auditoria
-  SEO Brasil, GEO, AEO, aparecer no ChatGPT, visibilidade orgânica, Business Hub,
-  Reclame Aqui, GBP, otimização orgânica. Reports always in Brazilian Portuguese.
+  4-stage perception probes with hallucination flags + AI rank, competitive
+  reverse-engineering (page types, search patterns, moves to copy), and a
+  prioritized 48h/30d/90d backlog ready to paste into an agent chat for execution.
+  Triggers: auditoria SEO Brasil, GEO, AEO, aparecer no ChatGPT, visibilidade
+  orgânica, Business Hub, Reclame Aqui, GBP, otimização orgânica, engenharia
+  reversa concorrente. Reports always in Brazilian Portuguese.
   Never invent rankings, citations or scores without evidence.
 metadata:
   author: vinimrdi
-  version: "2.6.0"
+  version: "2.7.0"
   language: en
   market: BR
-  tags: [seo, aeo, geo, brazil, visibility, schema, llms-txt, robots, business-hub, indexnow, agent-skills]
+  tags: [seo, aeo, geo, brazil, visibility, schema, llms-txt, robots, business-hub, indexnow, agent-skills, reverse-engineering, competitive]
 ---
 
-# Organic Visibility BR — SEO + AEO + GEO (v2.6)
+# Organic Visibility BR — SEO + AEO + GEO (v2.7)
 
 Universal organic visibility system for **any Brazilian entity**.
 
@@ -39,6 +41,7 @@ NAP, and verifiable facts outweigh empty superlatives.
 - robots.txt, OAI-SearchBot, Cloudflare/WAF, llms.txt, Schema, IndexNow
 - Claim status: Google Business Profile, Apple Business Connect, OpenAI Business Hub, Bing Webmaster, Reclame Aqui
 - Full SEO + AEO + GEO checklist for Brazil
+- Competitive reverse-engineering / "como o concorrente ganha tráfego"
 
 ## When NOT to use
 
@@ -48,7 +51,7 @@ NAP, and verifiable facts outweigh empty superlatives.
 
 ## Absolute constraints
 
-1. **No invented evidence.** Tag every claim: [OBSERVED], [MISSING], [INFERRED], [NEEDS USER].
+1. **No invented evidence.** Tag every claim: [OBSERVED], [MISSING], [INFERRED], [NEEDS USER], [ESTIMATED].
 2. Separate **SEO / AEO / GEO** in the scorecard.
 3. Brazil-first reputation: Reclame Aqui, GBP, CNPJ public data, major BR press — not Yelp/BBB defaults.
 4. Prefer verified Brazilian sources and earned corroboration over empty superlatives.
@@ -68,22 +71,24 @@ NAP, and verifiable facts outweigh empty superlatives.
 2. Technical access: robots.txt, OAI-SearchBot / GPTBot separation, WAF/Cloudflare blocks, IndexNow, sitemap, schema, llms.txt.
 3. Platform claim status with weights (GBP, Apple Business Connect, OpenAI Business Hub, Bing, Reclame Aqui, niche directories).
 4. Content citability + tactical pages opportunities (question landings, safe location pages, strategic FAQ).
-5. Run or simulate 4-stage perception probes + hallucination check.
-6. Competitor local gaps when relevant.
-7. Author / E-E-A-T scored checklist (especially YMYL / professional).
-8. Off-site & Parasite/Earned Mentions (Reclame Aqui, G2/Capterra, Reddit, Doctoralia, LinkedIn, Product Hunt when relevant).
-9. Produce the full Markdown report with scorecard, critical findings, backlog 48h/30d/90d, technical packages, and measurement plan.
+5. Run or simulate 4-stage perception probes + AI rank + pages cited + hallucination check.
+6. Competitive reverse-engineering (page types, search patterns, link magnets, moves to copy) when competitors are available.
+7. Competitor local gaps when relevant.
+8. Author / E-E-A-T scored checklist (especially YMYL / professional).
+9. Off-site & Parasite/Earned Mentions (Reclame Aqui, G2/Capterra, Reddit, Doctoralia, LinkedIn, Product Hunt when relevant).
+10. Produce the full Markdown report with scorecard, critical findings, backlog 48h/30d/90d, technical packages, and measurement plan.
 
 ## Progressive disclosure
 
 - `references/platforms-brasil.md` — weighted platforms + Brazilian oracles (CNPJ, Reclame Aqui, etc.)
-- `references/aeo-geo-schema.md` — bots, IndexNow, Business Hub, probes, citability
+- `references/ai-visibility-probes.md` — 4-stage probes + AI rank + pages cited (v2)
+- `references/competitive-reverse-engineering.md` — page types, search patterns, moves to copy
 - `references/scoring.md` — pillars and backlog horizons
 - `references/tactical-pages.md` — question landings, location pages, FAQ (anti-doorway)
 - `references/competitor-local.md` — local competitor gap analysis
 - `references/measurement.md` — GSC Generative AI + GA4 + probe cadence
 - `references/author-eeat.md` — scored E-E-A-T checklist (0-2 per signal)
-- `references/parasite-earned-mentions.md` — off-site authority, review platforms, Reddit, G2/Capterra, Reclame Aqui (Parasite & Earned Mentions)
+- `references/parasite-earned-mentions.md` — off-site authority, review platforms, Reddit, G2/Capterra, Reclame Aqui
 - `assets/template-*.md` — ready-to-use robots, schema, llms.txt, probes
 - `examples/sample-report-ptbr.md` — full example output
 
@@ -98,12 +103,16 @@ SEO | AEO | GEO | Total + short rationale
 ## Achados críticos
 Lista priorizada do que bloqueia resultado agora.
 
-## Probes de percepção (4 estágios)
-Tabela ou blocos com modelo, cited, hallucinations, missing facts.
+## Probes de percepção (4 estágios) + AI Rank
+Tabela com engine, cited, posição, páginas citadas, alucinações, ação.
+Ver `references/ai-visibility-probes.md`.
+
+## Engenharia Reversa Competitiva (quando aplicável)
+Playbook em 3 linhas + traffic engines + search patterns + moves to copy.
+Ver `references/competitive-reverse-engineering.md`.
 
 ## Análise competitiva local (quando aplicável)
 Tabela resumida cliente vs 2–3 concorrentes (GBP, reviews, páginas de área, local pack, Reclame Aqui) + gaps acionáveis.
-Ver `references/competitor-local.md`.
 
 ## Checklist de plataformas (com peso)
 | Plataforma | Peso | Status | Ação imediata |
@@ -127,15 +136,13 @@ Ver `references/competitor-local.md`.
 Status e próximos passos por plataforma relevante.
 
 ## Sinais de autor / experiência / E-E-A-T
-Checklist 0–2 por sinal (Experience, Expertise, Authoritativeness, Trust). 
-Ver `references/author-eeat.md`. Listar gaps críticos e ações.
+Checklist 0–2 por sinal. Listar gaps críticos e ações.
 
 ## Off-site & Parasite / Earned Mentions
-Presença em plataformas de alta autoridade (Reclame Aqui, G2, Capterra, Reddit, Doctoralia, LinkedIn, Product Hunt). 
-Ver `references/parasite-earned-mentions.md`. Tabela de status + ações no backlog.
+Presença em plataformas de alta autoridade + ações no backlog.
 
 ## Plano de medição (pós-auditoria)
-GSC Generative AI + GA4 AI Assistants + probes mensais fixos + reviews. Ver `references/measurement.md`.
+GSC Generative AI + GA4 AI Assistants + probes mensais fixos + reviews.
 
 ## Limitações da auditoria
 O que não foi possível verificar e o que o usuário precisa fornecer.
